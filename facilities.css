@@ -1434,9 +1434,9 @@ footer {
   margin-top: 0.5em;
 }
 
-#x,
+#x,#google,
 #instagram {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 /* Adjustments for smaller screens (e.g., phones) */
