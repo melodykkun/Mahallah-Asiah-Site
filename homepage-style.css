@@ -12,6 +12,10 @@ body {
     font-family: 'Glory';
     font-weight: lighter;
     background-color: #E8EBD3;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
 }
 
 .container {
@@ -23,30 +27,33 @@ body {
     padding: 0;
     background-color: #FDEBD2;
 
+
 }
 
 
 header {
-    position: relative;
-    display: flex;
-    align-items: center;
-    width: 100%;
+    position: fixed;
     text-align: right;
+    align-items: center;
+    display: flex;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #FDEBD2;
+    padding: 1px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
 }
 
 .logo {
     margin-right: 10px;
-    /* float: right; */
-    /* padding-right: 10px; */
     padding-left: 5px;
-
-
 }
 
 .mahallah {
     display: flex;
     align-items: center;
+    margin-left: auto;
 }
 
 .text {
@@ -54,18 +61,35 @@ header {
     flex-direction: column;
 }
 
-nav {
+.text h1 {
+    font-family: 'Artifika';
+    font-size: 22px;
+    font-weight: 200;
+
+}
+
+.text h2 {
+    font-family: 'Glegoo';
+    font-size: 15px;
+    font-weight: bold;
+    color: #535E47;
+    margin-top: 2px;
+}
+
+.navbar {
     margin-left: 10px;
-    bottom: 0;
+    bottom: -3px;
     left: 10px;
     position: relative;
     background-color: #D2AB80;
     border-radius: 10px 10px 0px 0px;
     padding: 10px;
     margin-bottom: 0;
+    display: flex;
+
 }
 
-nav ul {
+.navbar ul {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -73,7 +97,7 @@ nav ul {
 
 }
 
-nav a {
+.navbar a {
     text-decoration: none;
     padding: 8px;
     color: black;
@@ -86,26 +110,13 @@ h2 {
     margin: 0;
 }
 
-.text h1 {
-    font-family: 'Artifika';
-    font-size: 22px;
-    font-weight: 200;
-}
-
-.text h2 {
-    font-family: 'Glegoo';
-    font-size: 15px;
-    font-weight: bold;
-    color: #535E47;
-}
-
 .links {
     font-family: 'Glory';
     font-size: 15px;
     color: black;
 }
 
-nav::before {
+/* nav::before {
     content: "";
     display: block;
     position: absolute;
@@ -115,7 +126,7 @@ nav::before {
     height: 100%;
     background-color: #D2AB80;
     z-index: -1;
-}
+} */
 
 .overlay {
     position: absolute;
@@ -152,6 +163,51 @@ nav::before {
     color: white;
     margin: 0;
 }
+.toggle-btn {
+    font-size: 30px;
+    cursor: pointer;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 3;
+}
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 4;
+    top: 0;
+    left: 0;
+    background-color: black;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 30px;
+}
+
+.sidebar a {
+    padding: 8px 15px 8px 25px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    bottom: 10px;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+
 
 .title-overlay h2 {
     font-family: 'Glegoo';
@@ -409,4 +465,84 @@ footer {
 
 #x, #instagram{
     text-decoration: none;
+}
+/* Adjustments for smaller screens (e.g., phones) */
+@media (max-width: 600px) {
+
+    .hamburger {
+        display: block;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .title-overlay {
+        top: 50%;
+    }
+
+    .title-overlay h1 {
+        font-size: 3rem;
+    }
+
+    .title-overlay h2 {
+        font-size: 1em;
+    }
+
+    .about h1 {
+        font-size: 2.5em;
+        padding: 20px;
+    }
+
+    .about h3 {
+        padding: 10px;
+    }
+
+    .about2 h1 {
+        font-size: 3em;
+        padding: 20px;
+    }
+
+    .about2 h2 {
+        font-size: -1em;
+        padding: 5px;
+    }
+
+    .about2 h3 {
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+
+}
+
+
+
+/* Adjustments for desktop screen */
+@media (min-width: 1025px) {
+
+    .hamburger {
+        display: none;
+    }
+
+    .navbar {
+        display: block;
+    }
+
+    .title-overlay h1 {
+        font-size: 9em;
+    }
+
+    .title-overlay h2 {
+        font-size: 3em;
+    }
+
+    .about h1 {
+        font-size: 4em;
+        padding: 30px;
+    }
+
+    .about2 h1 {
+        font-size: 4em;
+        padding: 30px;
+    }
 }
