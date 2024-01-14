@@ -1,0 +1,499 @@
+/* google fonts-poppins*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap'); /*after url jgn enter*/
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* header */
+a:hover {
+    color: rgb(0, 0, 0);
+    text-decoration: underline;
+}
+
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+    background-color: #FDEBD2;
+
+}
+
+
+header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    text-align: right;
+
+}
+
+.logo {
+    margin-right: 10px;
+    /* float: right; */
+    /* padding-right: 10px; */
+    padding-left: 5px;
+
+
+}
+
+.mahallah {
+    display: flex;
+    align-items: center;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    margin-left: 10px;
+    bottom: 0;
+    left: 10px;
+    position: relative;
+    background-color: #D2AB80;
+    border-radius: 10px 10px 0px 0px;
+    padding: 10px;
+    margin-bottom: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+
+}
+
+nav a {
+    text-decoration: none;
+    padding: 8px;
+    color: black;
+    font-weight: bold;
+
+}
+
+h1,
+h2 {
+    margin: 0;
+}
+
+.text h1 {
+    font-family: 'Artifika';
+    font-size: 22px;
+    font-weight: 200;
+}
+
+.text h2 {
+    font-family: 'Glegoo';
+    font-size: 15px;
+    font-weight: bold;
+    color: #535E47;
+}
+
+.links {
+    font-family: 'Glory';
+    font-size: 15px;
+    color: black;
+}
+
+nav::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #D2AB80;
+    z-index: -1;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(83, 94, 71, 0.8);
+    z-index: 1;
+}
+
+.image-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.title-overlay {
+
+    position: absolute;
+    bottom: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 2;
+}
+
+.title-overlay h1 {
+    display: flex;
+    white-space: nowrap;
+    font-family: 'Artifika';
+    font-weight: lighter;
+    font-size: 9em;
+    color: white;
+    margin: 0;
+}
+
+.title-overlay h2 {
+    font-family: 'Glegoo';
+    font-weight: lighter;
+    font-size: 3em;
+    color: #E0E7A9;
+    margin-top: 5px;
+}
+
+/*header*/
+
+
+.img-slider {
+    max-width: 1200px;
+    position: relative;
+}
+
+.slider-title{
+    text-align: center;
+    font-size: 50px;
+    
+}
+
+#header {
+    display: block;
+    margin: 0 auto;
+    height: 50%;
+    max-width: 20%;
+    
+}
+
+.slider-subtitle{
+    color: #707070;
+    text-align: center;
+
+}
+
+.img-slider .carousel{
+    cursor: pointer;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 0px;
+    scroll-behavior: smooth;
+       
+}
+
+.carousel img{
+    height: 340px;
+    object-fit: cover;
+    margin-left: 10px;
+    width: calc(100% / 3);
+
+}
+
+body { /* GMBR PROGRAM DKT TGH*/
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5f9d2;
+    padding: 0 35px;
+}
+
+
+.img-slider i{
+top: 50%;
+height: 46px;
+width: 46px;
+cursor: pointer;
+position: absolute;
+font-size: 1.2rem;
+text-align: center;
+line-height: 46px;
+background: #FFF;
+border-radius: 50%;
+transform: translateY((-50%));
+}
+
+.img-slider i:first-child{
+    left: -23px;
+}
+
+.img-slider i:last-child{
+    right: -23px;
+}
+
+.slide-container{
+    overflow: hidden;
+    }
+    
+    .slide-content{
+    display: flex;
+    transform: transform 0.5s ease-in-out;
+    justify-content: center;
+    align-items: center;
+       
+    }
+
+
+.card-wrapper {
+    flex: 0 0 auto;
+    margin-right: 16px; /* Adjust as needed */
+}
+.card{
+   
+    width: 320px;
+    border-radius: 25px;
+    background-color: #FFF;
+}
+
+.image-content,
+.card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 14px;
+}
+
+.image-content{
+    position: relative; /*masukkan biru belakang gmbr*/
+    row-gap: 5px; /* gap gmbr dgn atas*/
+    padding: 25px 0;
+}
+
+.overlay-1{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #809671;
+    border-radius: 25px 25px 0 25px;
+}
+
+.overlay-2{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #D2AB80;
+    border-radius: 25px 25px 0 25px;
+}
+
+.overlay-3{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #725C3A;
+    border-radius: 25px 25px 0 25px;
+}
+
+.overlay-1::before,
+.overlay-1::after{ /* design kecik petak utk melengkung*/
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -40px;
+    height: 40px;
+    width: 40px;
+    background-color:#809671;
+
+}
+
+.overlay-2::before,
+.overlay-2::after{ /* design kecik petak utk melengkung*/
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -40px;
+    height: 40px;
+    width: 40px;
+    background-color:#D2AB80;
+
+}
+
+.overlay-3::before,
+.overlay-3::after{ /* design kecik petak utk melengkung*/
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -40px;
+    height: 40px;
+    width: 40px;
+    background-color:#725C3A;
+
+}
+
+.overlay-1::after,
+.overlay-2::after,
+.overlay-3::after{ /* bgi melengkung 90 degree */
+    border-radius: 0 40px 0 0;
+    background-color: #FFF;
+}
+
+.card-image{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background: #EFEFEF;
+    padding: 3px;
+}
+
+
+.card-image .card-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid; /* border gmbr*/
+}
+
+
+.name{
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+}
+
+.description{
+    font-size: 14px;
+    color: #707070;
+    text-align: center;
+}
+
+
+.more {
+   display : none;
+}
+
+
+button{
+    border: none;
+    font-size: 16px;
+    color: #FFF;
+    padding: 8px 16px;
+    background-color: #809671;
+    border-radius: 6px;
+    margin: 14px;
+    cursor: pointer; /* cursor berubah*/
+    transition: all 0.3s ease;
+    text-transform: capitalize;
+}
+.button-1{
+    border: none;
+    font-size: 16px;
+    color: #FFF;
+    padding: 8px 16px;
+    background-color: #809671;
+    border-radius: 6px;
+    margin: 14px;
+    cursor: pointer; /* cursor berubah*/
+    transition: all 0.3s ease;
+}
+
+.button-2{
+    border: none;
+    font-size: 16px;
+    color: #FFF;
+    padding: 8px 16px;
+    background-color: #D2AB80;
+    border-radius: 6px;
+    margin: 14px;
+    cursor: pointer; /* cursor berubah*/
+    transition: all 0.3s ease;
+}
+
+.button-3{
+    border: none;
+    font-size: 16px;
+    color: #FFF;
+    padding: 8px 16px;
+    background-color: #725C3A;
+    border-radius: 6px;
+    margin: 14px;
+    cursor: pointer; /* cursor berubah*/
+    transition: all 0.3s ease;
+}
+
+.button-1:hover{
+background: #80c552;
+}
+
+.button-2:hover{
+background: #eec395;
+}
+    
+.button-3:hover{
+background: #b1823c;
+}
+
+
+
+footer {
+    justify-content:center;
+    background-color: #E4D4BD;
+    text-align: left;
+    margin-bottom: 1em;
+    position: relative;
+    padding: 30px;
+    display: flex;
+    align-items: flex-start;
+    /* Updated from 'center' to 'flex-start' */
+}
+
+#mahallah {
+    font-family: 'Artifika';
+    margin-top: 0.1em;
+    margin-left: -0.3rem;
+    text-align: center;
+    font-size: 2rem;
+}
+
+#address{
+    margin-top: auto;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.info {
+    justify-content: flex-start;
+}
+
+.logo {
+    margin-right: 20px;
+}
+
+.address {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.contact{
+    margin-top: 0.5em;
+}
+
+#x, #instagram{
+    text-decoration: none;
+}
