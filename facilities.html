@@ -10,41 +10,52 @@
     <link rel="stylesheet" href="facilities.css">
     <script src="facilities.js" defer></script>
     <title>Mahallah Asiah</title>
-    <link rel="icon" type="image/x-icon" href="img/logo asiah.png">
 </head>
 
 <body>
     <header>
+
         <div class="container">
-            <nav>
+            <div class="navbar">
                 <ul class="links">
-                    <a href='homepage-index.html'>Home</a>
+                    <a href='#home'>Home</a>
+                    <br> 
+                    <a href='#aboutUs'>About Us</a>
                     <br>
-                    <a href='about.html'>About Us</a>
+                    <a href='#programs'>Programs</a>
                     <br>
-                    <a href='program.html'>Programs</a>
-                    <br>
-                    <a href='facilities.html'>Facilities</a>
-                    <br>
-                    <a href='footer'>Contact Us</a>
+                    <a href='#facilities'>Facilities</a>
                 </ul>
-            </nav>
+            </div>
+
+            <div class="hamburger">
+                <div id="mySidenav" class="sidebar">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a href="#">Home</a>
+                    <a href="#">About Us</a>
+                    <a href="#">Programs</a>
+                    <a href="#">Facilities</a>
+                </div>
+                <span style="font-size:30px;cursor:pointer" class="toggle-btn" onclick="openNav()">&#9776;</span>
+            </div>
+
             <div class="mahallah">
                 <div class="text">
                     <h1>Mahallah Asiah</h1>
                     <h2>IIUM GOMBAK</h2>
                 </div>
-                <img src="img/logo asiah.png" alt="asiah logo" class="logo" height="50">
+                <img src="logo asiah.png" alt="asiah logo" class="logo" height="50">
             </div>
         </div>
     </header>
+
     <div class="image-container">
         <div class="overlay"></div>
         <div class="title-overlay">
             <h1>Mahallah Asiah</h1>
             <h2>Knowledge • Information • Technical</h2>
         </div>
-        <img src="img/asiah block.png" alt="asiah blocks" class="blocks" width="100%">
+        <img src="asiah blocks.png" alt="asiah blocks" class="blocks" width="100%">
     </div>
 
 <!----------------------------------START SECTION---------------------------------------->
@@ -55,7 +66,7 @@
     <div class="slider-content">
 
         <div class="slider-single">
-            <img class="slider-single-image" src="img/MO asiah.png" alt="1" />
+            <img class="slider-single-image" src="MO asiah.png" alt="1" />
             <h1 class="slider-single-title">Mahallah Asiah's Office</h1>
             <a class="slider-single-likes" href="javascript:void(0);">
                 <i class="fa fa-heart"></i>
@@ -63,7 +74,7 @@
         </div>
 
         <div class="slider-single">
-            <img class="slider-single-image" src="img/cafe asiah.png" alt="2" />
+            <img class="slider-single-image" src="cafe asiah.png" alt="2" />
             <h1 class="slider-single-title">Mahallah Asiah's Cafeteria</h1>
             <a class="slider-single-likes" href="javascript:void(0);">
                 <i class="fa fa-heart"></i>
@@ -71,7 +82,7 @@
         </div>
 
         <div class="slider-single">
-            <img class="slider-single-image" src="img/court asiah jelas.png" alt="3" />
+            <img class="slider-single-image" src="court asiah jelas.png" alt="3" />
             <h1 class="slider-single-title">Mahallah Asiah's Court</h1>
             <a class="slider-single-likes" href="javascript:void(0);">
                 <i class="fa fa-heart"></i>
@@ -80,7 +91,7 @@
 
 
         <div class="slider-single">
-            <img class="slider-single-image" src="img/mart asiah.png" alt="4" />
+            <img class="slider-single-image" src="mart asiah.png" alt="4" />
             <h1 class="slider-single-title">Mahallah Asiah's Mart</h1>
             <a class="slider-single-likes" href="javascript:void(0);">
                 <i class="fa fa-heart"></i>
@@ -89,7 +100,7 @@
 
 
         <div class="slider-single">
-            <img class="slider-single-image" src="img/mph asiah.png" alt="5" />
+            <img class="slider-single-image" src="mph asiah.png" alt="5" />
             <h1 class="slider-single-title">Mahallah Asiah's MPH</h1>
             <a class="slider-single-likes" href="javascript:void(0);">
                 <i class="fa fa-heart"></i>
@@ -98,7 +109,7 @@
 
 
         <div class="slider-single">
-            <img class="slider-single-image" src="img/washer asiah.png" alt="5" />
+            <img class="slider-single-image" src="washer asiah.png" alt="5" />
             <h1 class="slider-single-title">Mahallah Asiah's Washer</h1>
             <a class="slider-single-likes" href="javascript:void(0);">
                 <i class="fa fa-heart"></i>
@@ -115,38 +126,38 @@
         <div class="box">
             <div class="kotak1">
                 <p1>Mahallah Asiah's Office</p1>
-                <img src="img/MO asiah.png">
+                <img src="MO asiah.png">
                 <p2>Mahallah's office is a multifunctional space that combines efficiency with a welcoming atmosphere. It serves as the operational hub, ensuring the smooth functioning of administrative tasks while fostering a sense of community among residents.</p2>
                 <button class="button" type="button">See More</button>
             </div>
             <div class="kotak2">
                 <p1>Mahallah Asiah's Cafeteria</p1>
-                <img src="img/cafe asiah.png">
-                <p2>Mahallah's cafeteria is more than just a dining area; it's a dynamic space that fosters social interaction, accommodates diverse tastes, and adds to the overall sense of community within the mahallah.</p2>
+                <img src="cafe asiah.png">
+                <p2>Mahallah's cafeteria is more than just a dining area; <br>it's a dynamic space that fosters social interaction, <br>accommodates diverse tastes, and adds to the overall <br>sense of community within the mahallah.</p2>
                 <button class="button" type="button">See More</button>
             </div>
             <div class="kotak3">
                 <p1>Mahallah Asiah's Court</p1>
-                <img src="img/court asiah jelas.png">
-                <p2>Mahallah's court is a dynamic outdoor space that serves as a hub for physical activity, social interaction, and community events. Its versatile design, well-maintained facilities, and integration with the natural environment contribute to a vibrant and inclusive living experience for residents.</p2>
+                <img src="court asiah jelas.png">
+                <p2>Mahallah's court is a dynamic outdoor space that serves<br> as a hub for physical activity, social interaction, and community events. Its versatile design, well-maintained facilities, and integration with the natural environment contribute to a vibrant and inclusive living experience<br> for residents.</p2>
                 <button class="button" type="button">See More</button>
             </div>
             <div class="kotak4">
                 <p1>Mahallah Asiah's Mart</p1>
-                <img src="img/mart asiah.png">
-                <p2>Mahallah's mart is a vital amenity that goes beyond being a mere convenience store. It is a well-organized and thoughtfully stocked space that enhances the daily living experience for residents by providing easy access to a variety of essential items in a friendly and inclusive environment.</p2>
+                <img src="mart asiah.png">
+                <p2>Mahallah's mart is a vital amenity that goes beyond<br> being a mere convenience store. It is a well-organized <br>and thoughtfully stocked space that enhances the daily living experience for residents by providing easy access <br>to a variety of essential items in a friendly and inclusive environment.</p2>
                 <button class="button" type="button">See More</button>
             </div>
             <div class="kotak5">
                 <p1>Mahallah Asiah's MPH</p1>
-                <img src="img/mph asiah.png">
+                <img src="mph asiah.png">
                 <p2>Mahallah's multipurpose hall is a dynamic and adaptable space that plays a central role in enhancing the overall <br>living experience for residents. Its versatile design and functionality make it a cornerstone for community<br> building and the hosting of a diverse range of events.</p2>
                 <button class="button" type="button">See More</button>
             </div>
             <div class="kotak6">
                 <p1>Mahallah Asiah's Washer</p1>
-                <img src="img/washer asiah.png">
-                <p2>Mahallah's washer and dryer facilities are designed to be efficient, user-friendly, and accommodating to the diverse laundry needs of residents. The inclusion of amenities, clear instructions, and consideration for environmental impact contribute to a positive and well-rounded laundry experience for the hostel community.</p2>
+                <img src="washer asiah.png">
+                <p2>Mahallah's washer and dryer facilities are designed<br> to be efficient, user-friendly, and accommodating<br> to the diverse laundry needs of residents. The inclusion <br>of amenities, clear instructions, and consideration for environmental impact contribute to a positive and well-rounded laundry experience for the hostel community.</p2>
                 <button class="button" type="button">See More</button>
             </div>
         
@@ -270,7 +281,7 @@
 
     <footer>
 
-        <img src="img/logo asiah.png" alt="asiah logo" class="logo" height="200">
+        <img src="logo asiah.png" alt="asiah logo" class="logo" height="200">
         <section class="info">
             <h4 id='mahallah'>Mahallah Asiah</h4>
             <div class="address">
@@ -285,14 +296,13 @@
             </div>
             <div class="contact">
 
-                <img src="img/google logo.png" alt="google" height="20">
+                <img src="google logo.png" alt="google" height="20">
                 <a href="https://twitter.com/MahallahAsiah" id="x">
-                    <img src="img/x logo.png" alt="x" height="20">
+                    <img src="x logo.png" alt="x" height="20">
                 </a>
                 <a href="https://www.instagram.com/mahallahasiah/?hl=en" id="instagram">
-                    <img src="img/ig logo.png" alt="instagram" height="20">
+                    <img src="ig logo.png" alt="instagram" height="20">
                 </a>
-                <!--<img src="facebook.png" alt="facebook" height="20">-->
             </div>
         </section>
         </div>
