@@ -14,29 +14,42 @@
 </head>
 <body>
     <header>
-        <div class="container">
-            <nav>
-                <ul class="links">
-                    <a href='homepage-index.html'>Home</a>
-                    <br>
-                    <a href='about.html'>About Us</a>
-                    <br>
-                    <a href='program.html'>Programs</a>
-                    <br>
-                    <a href='facilities.html'>Facilities</a>
-                    <br>
-                    <a href='footer'>Contact Us</a>
-                </ul>
-            </nav>
-            <div class="mahallah">
-                <div class="text">
-                    <h1>Mahallah Asiah</h1>
-                    <h2>IIUM GOMBAK</h2>
-                </div>
-                <img src="img/logo asiah.png" alt="asiah logo" class="logo" height="50">
-            </div>
+      <div class="container">
+        <div class="navbar">
+            <ul class="links">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href='#home'>Home</a>
+                <br>
+                <a href='#aboutUs'>About Us</a>
+                <br>
+                <a href='#programs'>Programs</a>
+                <br>
+                <a href='#facilities'>Facilities</a>
+                <br>
+                <a href='#contactUs'>Contact Us</a>
+            </ul>
+        </div> 
+        
+    <div class="hamburger">
+        <div id="mySidenav" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="homepage-index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="program.html">Programs</a>
+            <a href="facilities.html">Facilities</a>
+            <a href="#">Contact Us</a>
         </div>
-    </header>
+        <span style="font-size:30px;cursor:pointer" class="toggle-btn" onclick="openNav()">&#9776;</span>
+    </div>
+        <div class="mahallah">
+            <div class="text">
+                <h1>Mahallah Asiah</h1>
+                <h2>IIUM GOMBAK</h2>
+            </div>
+            <img src="img/logo asiah.png" alt="asiah logo" class="logo" height="50">
+        </div>
+    </div>
+</header>
     <div class="image-container">
         <div class="overlay"></div>
         <div class="title-overlay">
@@ -63,13 +76,23 @@
     <section>
       <div class="ann">
         <div class="ann-item" id="fellow-on-duty">
-          <strong>FELLOW ON DUTY SCHEDULE DECEMBER 2023</strong>
+          <strong>FELLOW ON DUTY SCHEDULE JANUARY 2024</strong>
+          <button><a href="https://docs.google.com/document/d/1JrGVtJTDdYfEQ4p2B9dI2kik_CvUjsEC/edit?usp=drivesdk&ouid=103960407139472139674&rtpof=true&sd=true">Click Here</a></button>
         </div>
-        <div class="ann-item"><strong>MAHALLAH ASIAH FACILITIES CHECKLIST FORM</strong></div>
-        <div class="ann-item"><strong>MAHALLAH ASIAH RETURNIG STUDENTS REGISTRATION FLOWCHART</strong></div>
-        <div class="ann-item"><strong>ANNOUNCEMENT ON COMPOUND ISSUED AND APPEALS ON I-MA'LUUM FOR SEMESTER 3 2021/2022</strong></div>
+        <div class="ann-item" id="fellow-on-duty">
+          <strong>FELLOW ON DUTY SCHEDULE DECEMBER 2023</strong>
+          <button><a href="https://docs.google.com/document/d/1JfOQje5Dv_iGOaQvwVBwE2Ck-4w_8kSg/edit?usp=drive_link&ouid=103960407139472139674&rtpof=true&sd=true">Click Here</a></button>
+        </div>
+        <div class="ann-item">
+          <strong>MAHALLAH ASIAH FACILITIES CHECKLIST FORM</strong>
+          <button><a href="https://drive.google.com/file/d/1bK9OCDUaqs9mP0d3HHlXM2RjJ_wL8iwR/view?usp=sharing">Click Here</a></button>
+        </div>
+        <div class="ann-item">
+          <strong>MAHALLAH ASIAH RETURNIG STUDENTS REGISTRATION FLOWCHART</strong>
+          <button><a href="https://drive.google.com/file/d/1kTithbqYEyy5tOyzkr0-BFg37tIZzmmh/view?usp=sharing">Click Here</a></button>
+        </div>
       </div>
-      <div class="container">
+      <!-- <div class="container">
         <div class="button" onclick="shiftLeft()"><img src="https://image.ibb.co/mRsEb7/left_arrow.png" alt=""></div>
         <div class="cards-wrapper">
             <ul class="cards__container">
@@ -87,7 +110,7 @@
             </div>
         </div>
         <div class="button" onclick="shiftRight()"><img src="https://image.ibb.co/dfPSw7/right_arrow.png" alt=""></div>
-      </div>
+      </div> -->
       <!-- <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
           <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
