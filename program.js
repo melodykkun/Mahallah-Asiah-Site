@@ -58,4 +58,10 @@ function prevSlide() {
 // Auto slide functionality
 setInterval(nextSlide, 3000); // Adjust the interval as needed
 
-                       
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+  }
