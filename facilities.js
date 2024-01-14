@@ -1,8 +1,18 @@
+//Header
+
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+  }
 
 const repeat = false;
 const noArrows = false;
 const noBullets = false;
 
+//everything about the slider is here TT
 
 const container = document.querySelector('.slider-container');
 var slide = document.querySelectorAll('.slider-single');
