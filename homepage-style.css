@@ -235,8 +235,10 @@ h2 {
     gap: 25px;
     margin: 20px;
 }
+
 .menu-item {
     font-size: 20px;
+    font-weight: 700;
     background-color: #E4D4BD;
     border-radius: 20px;
     display: flex;
@@ -244,7 +246,6 @@ h2 {
     justify-content: center;
     height: 100px;
     padding: 0;
-    font-weight: 700;
 }
 
 .latestAnn {
